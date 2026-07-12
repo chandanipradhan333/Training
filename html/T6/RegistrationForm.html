@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <style>
+        body{
+            background-color: rgb(255, 179, 179);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            width: 400px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;  
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1{
+            text-align: center;
+        }
+        label{
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"],
+        select,
+        input[type="date"]{
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button{
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #45a049;
+        }
+        
+    </style>
+    <form>
+
+        <h1>Registration Form</h1>
+        <p>
+
+        <label>Full Name:</label><br>
+        <input type="text" placeholder="Enter your full name" ><br>
+
+        <label>Email:</label><br>
+        <input type="email" placeholder="Enter your email" ><br>
+
+        <label>Phone number:</label><br>
+        <input type="tel" placeholder="Enter your phone number" ><br>
+
+        <label>Password:</label><br>
+        <input type="password" placeholder="Enter your password" ><br>
+
+        <label>Country:</label><br>
+        <select>
+            <option value="Select your Country">Country</option>
+            <option value="Nepal">Nepal</option>
+            <option value="China">China</option>
+            <option value="other">Other</option>
+        </select><br>
+        
+        <input type="radio" name="gender" value="male">
+        <label>Male</label>
+        <input type="radio" name="gender" value="female">
+        <label>Female</label>
+        <input type="radio" name="gender" value="other">
+        <label>Other</label><br>
+
+        <label>Hobbies:</label><br>
+        <input type="checkbox" name="hobbies" value="reading">
+        <label>Reading</label>
+        <input type="checkbox" name="hobbies" value="writing">
+        <label>Writing</label>
+        <input type="checkbox" name="hobbies" value="others">
+        <label>Others</label><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" placeholder="Enter your date of birth" ><br>
+        </p>
+
+        <p>
+        <button type="submit">REGISTER</button>
+        </p>
+
+    </form>
+    <footer>
+        <p><strong>&copy; Made by Chandani Pradhan</strong></p>
+    </footer>
+</body>
+</html>

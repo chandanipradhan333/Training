@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body
+        {
+          background-image: url("c:\\Users\\Asus\\Downloads\\brick.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          font-size: 20px;
+        }
+        form{
+            width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 5px solid #130101;  
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1{
+            text-align: center;
+        }
+        label{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .option-group{
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .option-group label{
+            display: inline-block;
+            margin-bottom: 0;
+        }
+        .compact-group{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            margin: 4px 0 8px;
+        }
+        .compact-group label{
+            display: inline-block;
+            margin-bottom: 0;
+        }
+        button{
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: rgb(179, 206, 225);
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: #d187c3;
+        }
+    </style>
+    <form>
+        <h1><p style="color: rgb(255, 255, 255);">Movie Ticket Booking Form</p></h1>
+        <p>
+
+        <label><bold>Select Movie:</bold></label>
+
+        <select name="movie">
+            <option value="Select Movie">Select Movie</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Drama">Drama</option>
+            <option value="Action">Action</option>
+            <option value="Horror">Horror</option>
+            <optgroup label="Animation">
+                <option value="Disney">Disney</option>
+                <option value="Pixar">Pixar</option>
+            </optgroup>
+            <option value="Romance">Romance</option>
+        </select><br><br>
+
+        <label><bold>Ticket Type:</bold></label>
+        <div class="option-group">
+            <input type="radio" name="ticketType" value="Regular">
+            <label>Regular</label>
+            <input type="radio" name="ticketType" value="VIP">
+            <label>VIP</label>
+        </div><br>
+
+        <label><bold>Number of Tickets:</bold></label>
+
+        <input type="number" name="tickets" min="1" max="10"><br><br>
+
+        <label><bold>Choose Snacks:</bold></label>
+        <div class="compact-group">
+            <input type="checkbox" name="snacks" value="Popcorn">
+            <label>Popcorn</label>
+            <input type="checkbox" name="snacks" value="Nachos">
+            <label>Nachos</label>
+            <input type="checkbox" name="snacks" value="Soft Drinks">
+            <label>Soft Drinks</label>
+            <input type="checkbox" name="snacks" value="French Fries">
+            <label>French Fries</label>
+            <input type="checkbox" name="snacks" value="Ice Cream">
+            <label>Ice Cream</label>
+        </div><br>
+
+        <label><bold>Show Time:</bold></label>
+        <div class="compact-group">
+            <input type="radio" name="showTime" value="Morning">
+            <label>Morning</label>
+            <input type="radio" name="showTime" value="Afternoon">
+            <label>Afternoon</label>
+            <input type="radio" name="showTime" value="Evening">
+            <label>Evening</label>
+        </div><br>
+
+        <label><bold>Choose Date:</bold></label>
+        <input type="date" name="showDate"><br><br>
+
+        <label><bold>Choose Seat:</bold></label>
+        <select name="seat">
+            <option value="Select Seat">Select Seat</option>
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="A3">A3</option>
+            <option value="B1">B1</option>
+            <option value="B2">B2</option>
+            <option value="B3">B3</option>
+        </select><br><br>
+
+        <label><bold>Payment Method:</bold></label>
+        <select name="paymentMethod">
+            <option value="Select Payment Method">Select Payment Method</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="Debit Card">Debit Card</option>
+            <option value="Mobile banking">Mobile Banking</option>
+            <option value="online payement">Online Payment</option>
+            <option value="Cash">Cash</option>
+        </select><br><br>
+        </p>
+
+        <input type="submit" value="Book Tickets"><br><br>
+
+    </form>
+</body>
+</html>
