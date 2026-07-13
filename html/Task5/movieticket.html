@@ -70,7 +70,7 @@
 
         <label><bold>Select Movie:</bold></label>
 
-        <select name="movie">
+        <select name="movie" required>
             <option value="Select Movie">Select Movie</option>
             <option value="Comedy">Comedy</option>
             <option value="Drama">Drama</option>
@@ -130,7 +130,7 @@
             <option value="A3">A3</option>
             <option value="B1">B1</option>
             <option value="B2">B2</option>
-            <option value="B3">B3</option>
+            <option value="B3">B3</option required>
         </select><br><br>
 
         <label><bold>Payment Method:</bold></label>
@@ -140,11 +140,12 @@
             <option value="Debit Card">Debit Card</option>
             <option value="Mobile banking">Mobile Banking</option>
             <option value="online payement">Online Payment</option>
-            <option value="Cash">Cash</option>
+            <option value="Cash">Cash</option required>
         </select><br><br>
         </p>
 
         <input type="submit" value="Book Tickets"><br><br>
+        <input type="reset" value="Clear"></input>
 
     </form>
 </body>
